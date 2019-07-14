@@ -1,5 +1,4 @@
-use Rack::Reloader, 0  
-use Rack::ContentLength
+require 'discordrb'
 
 bot_id = ENV['DISCORD_ID']
 bot_secret = ENV['DISCORD_SECRET']
