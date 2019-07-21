@@ -17,17 +17,10 @@ bot.message(with_text: 'PlayRust') do |event|
   puts "playing rust now"
 end
 
-bot.message(with_text: 'WatchOblivion1') do |event|
-  event.respond 'ok!'
-  bot.stream = 'https://www.twitch.tv/obliviionhd'
-  puts "watching obliviionhd"
-end
 
-bot.message(with_text: 'WatchOblivion2') do |event|
-  event.respond 'ok!'
-  bot.stream('test', 'https://www.twitch.tv/obliviionhd')
-  puts "watching obliviionhd"
-end
+
+bot.stream('Watching Twitch', 'https://www.twitch.tv/obliviionhd')
+
 
 
 puts "lul"
