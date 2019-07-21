@@ -19,9 +19,11 @@ end
 
 
 
-bot.stream('Watching Twitch', 'https://www.twitch.tv/obliviionhd')
+# bot.stream('Watching Twitch', 'https://www.twitch.tv/obliviionhd')
 
 
 
 puts "lul"
 bot.run
+
+# bot.run :async
