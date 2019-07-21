@@ -19,7 +19,7 @@ end
 
 bot.message(with_text: 'WatchOblivion') do |event|
   event.respond 'ok!'
-  bot.watching = 'https://www.twitch.tv/obliviionhd'
+  bot.stream_url = 'https://www.twitch.tv/obliviionhd'
   puts "watching obliviionhd"
 end
 
