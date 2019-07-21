@@ -5,7 +5,7 @@ bot_secret = ENV['DISCORD_SECRET']
 
 bot = Discordrb::Bot.new token: bot_secret, client_id: bot_id
 
-bot.game 'Rust'
+bot.game = 'Rust'
 
 bot.message(with_text: 'Ping!') do |event|
   event.respond 'Pong!'
