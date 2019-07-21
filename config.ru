@@ -1,4 +1,5 @@
 require 'discordrb'
+require 'rack'
 
 bot_id = ENV['DISCORD_ID']
 bot_secret = ENV['DISCORD_SECRET']
@@ -14,6 +15,10 @@ bot.message(with_text: 'PlayRust') do |event|
   event.respond 'Pong!'
   bot.game = 'Rust'
   puts "got ping, putting pong"
+end
+
+fork do
+  run Proc.new { |env| ['200', {'Content-Type' => 'text/html'}, ['get rack\'d']] }
 end
 
 bot.run
