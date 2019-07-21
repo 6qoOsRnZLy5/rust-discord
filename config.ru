@@ -17,8 +17,10 @@ bot.message(with_text: 'PlayRust') do |event|
   puts "got ping, putting pong"
 end
 
-fork do
+Thread.new {
+  require 'rack'
   run Proc.new { |env| ['200', {'Content-Type' => 'text/html'}, ['get rack\'d']] }
-end
+}
 
+puts "lul"
 bot.run
