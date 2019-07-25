@@ -43,5 +43,5 @@ puts "bot started.."
 
 sleep 1
 bot.game = 'Rust'
-bot.send_message(601755089845354556, 'Bot is now active!')
+#bot.send_message(601755089845354556, 'Bot is now active!')
 bot.join
