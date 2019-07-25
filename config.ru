@@ -15,7 +15,7 @@ bot.message(with_text: '!ping') do |event|
   sleep 1
   event.respond "Pong u #{event.author.mention} !"
   puts " ---- got ping, putting pong"
-  puts event.inspect
+  #puts event.inspect
   puts "----------------------------"
 end
 
