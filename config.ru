@@ -23,7 +23,7 @@ bot.message(with_text: '!subscribe') do |event|
   event.channel.start_typing
   sleep 1
   event.author.add_role(603765106584715285, 'bot')
-  event.respond "u should be subscribed to updates for rust now, #{event.author.mention} !"
+  event.respond "u should be subscribed to updates for rust client stable now, #{event.author.mention} !"
 end
 
 bot.message(with_text: '!commands') do |event|
