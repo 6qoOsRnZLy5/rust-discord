@@ -18,13 +18,14 @@ end
 
 
 roles = Hash.new
-roles["rust-client"] = ENV["NOTIFY_STABLE_CLIENT_ROLE"].to_i
-roles["rust-server"] = ENV["NOTIFY_STABLE_SERVER_ROLE"].to_i
-roles["rust-client-beta"] = ENV["NOTIFY_STAGING_CLIENT_ROLE"].to_i
-roles["rust-skins"] = ENV["NOTIFY_SKINS_ROLE"].to_i
-roles["rust-youtube"] = ENV["NOTIFY_YOUTUBE_ROLE"].to_i
-roles["rust-reddit"] = ENV["NOTIFY_REDDIT_ROLE"].to_i
-roles["rust-twitch"] = ENV["NOTIFY_TWITCH_ROLE"].to_i
+roles["client"] = ENV["NOTIFY_STABLE_CLIENT_ROLE"].to_i
+roles["server"] = ENV["NOTIFY_STABLE_SERVER_ROLE"].to_i
+roles["client-beta"] = ENV["NOTIFY_STAGING_CLIENT_ROLE"].to_i
+roles["skins"] = ENV["NOTIFY_SKINS_ROLE"].to_i
+roles["youtube"] = ENV["NOTIFY_YOUTUBE_ROLE"].to_i
+roles["reddit"] = ENV["NOTIFY_REDDIT_ROLE"].to_i
+roles["twitch"] = ENV["NOTIFY_TWITCH_ROLE"].to_i
+roles["news"] = ENV["NOTIFY_NEWS_ROLE"].to_i
 allroles = roles.keys.join(", ").to_s
 
 bot.command(:subscribe,
