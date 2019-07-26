@@ -4,7 +4,7 @@ require 'rack'
 bot_id = ENV['DISCORD_ID']
 bot_secret = ENV['DISCORD_SECRET']
 
-bot = Discordrb::Bot.new token: bot_secret, client_id: bot_id, prefix: '!'
+bot = Discordrb::Commands::CommandBot.new token: bot_secret, client_id: bot_id, prefix: '!'
 
 USAGE = "!ping - a ping is usually followed by pong, "
 USAGE << "!subscribe - get mentioned when rust updates, "
